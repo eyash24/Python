@@ -1,10 +1,10 @@
-# lesson: Networking with Python + Networking: Write a Web Browser
+# lesson: Networking with Python, Networking: Write a Web Browser
 # Source: https://www.freecodecamp.org/learn/scientific-computing-with-python
 
 import socket
 my_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 my_sock.connect(('data.pr4e.org',80))
-cmd='Get https://data.pr4e.org/romeo.txt HTTP/1.0\n\n'.encode()
+cmd='Get https://data.pr4e.org/romeo.txt HTTP/1.0\r\n\r\n'.encode()
 my_sock.send(cmd)
 while(True):
     data = my_sock.recv(512)
