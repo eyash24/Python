@@ -1,4 +1,4 @@
-# lesson: Networking: Text Processing and Networking: Using urllib in Python
+# lesson: Networking: Text Processing, Networking: Using urllib in Python
 # Source: https://www.freecodecamp.org/learn/scientific-computing-with-python
 
 print(ord('A'), ord('Z')) # output: 65 90 
